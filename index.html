@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gymproject</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background: url('background.jpg');
+        width: 1200;
+    }
+
+.left{
+border: 0px solid red;
+display: inline-block;
+position: absolute;
+left: 50px;
+top: 20px;
+}
+.left img{
+width: 140px;
+}
+.left div{
+line-height: 20px;
+font-size: 25px;
+text-align: center;
+color: aliceblue;
+}
+
+.center{
+    border: 0px solid rgb(129, 203, 114);
+display: block;
+width: 40%;
+margin: 50px auto ;
+}
+
+.right{
+    border: 0px solid rgb(161, 144, 190);
+display: inline-block;
+position: absolute;
+right: 35px;
+top: 45px;
+}
+
+.navbar li{
+    display: inline-block;
+    size: 25px;
+}
+.navbar li a{
+    color: aliceblue;
+    text-decoration: azure;
+    padding: 35px 25px;
+}
+.navbar li a:hover, .navbar li a.active{
+    text-decoration: underline;
+    color: greenyellow;
+}
+
+.button{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin: 0px 10px;
+background-color:black;
+color:white;
+padding: 5px 15px;
+border: 2px solid grey;
+border-radius: 10px;
+font-size: 20px;
+cursor: pointer;
+}
+.button :hover{
+    background-color: cadetblue;
+}
+
+.container{
+ border: 100px white;
+ margin: 100px 80px;
+ padding: 75px;
+ width: 30%;
+ border-radius: 20px;
+}
+
+.fgroup input{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-align: center;
+display: block;
+width: 400px;
+padding: 2px;
+border: 2px solid white;
+margin: 10px auto;
+font-size: 25px;
+border-radius: 10px;
+}
+
+.container h1{
+    text-align: center;
+    color: aliceblue;
+}
+
+.container button{
+   display: block;
+    width: 100px;
+    margin: 20px auto;
+    background-color: beige;
+    color: rgb(147, 22, 79);
+}
+</style>
+
+
+<body>
+    <header class="header">
+      <div class="left">
+         <img src="gym.png">
+         <div>Gym Logo</div>
+      </div>
+
+<div class="center">
+   <ul class="navbar">
+    <li><a href="#" class="active">Home</a> </li>
+    <li><a href="#">About Us</a> </li>
+    <li><a href="#">Fitness Package</a> </li>
+    <li><a href="#">Contact Us</a> </li>
+  </ul>
+</div>
+
+<div class="right">
+   <button class="button">Sign In </button>
+   <button class="button">Call Us</button>
+</div>
+</header>
+    <div class="container">
+        <h1 >Join Now!!!!!!!!</h1>
+        <form action="abc.php">
+            <div class="fgroup">
+            <input type="text" name="" placeholder="Enter Your Name">
+               </div>
+               <div class="fgroup">
+                <input type="text" name="" placeholder="Enter Your Gender">
+                   </div>
+                   <div class="fgroup">
+                    <input type="number" name="" placeholder="Enter Your Age">
+                       </div>
+                       <div class="fgroup">
+                        <input type="text" name="" placeholder="Enter Your Email">
+                           </div>
+                           <div class="fgroup">
+                            <input type="number" name="" placeholder="Enter Your Number">
+                               </div>
+                               <div>
+                               <button class="button">SUBMIT</button>
+                               </div>
+        </form>
+    </div>
+</body>
+</html>
